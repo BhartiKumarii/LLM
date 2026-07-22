@@ -1,7 +1,7 @@
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnableLambda
+
 
 llm=OllamaLLM(model="gemma:2b",num_predict=256,temperature=0.5,top_p=0.2,top_k=1)
 
