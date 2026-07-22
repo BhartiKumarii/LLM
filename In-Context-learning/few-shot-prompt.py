@@ -1,9 +1,5 @@
 from langchain_ollama import OllamaLLM
-llm=OllamaLLM(model="gemma:2b")
-
-params={
-    "new_max_tokens":10
-}
+llm=OllamaLLM(model="gemma:2b",num_predict=10)
 
 prompt = """Here are few examples of classifying emotions in statements:
 

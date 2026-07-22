@@ -1,10 +1,6 @@
 from langchain_ollama import OllamaLLM
-llm=OllamaLLM(model="gemma:2b")
+llm=OllamaLLM(model="gemma:2b",num_predict=128,temperature=0.5)
 
-params = {
-    "max_new_tokens": 128,
-    "temperature": 0.5,
-}
 
 prompt1 = """Here is an example of translating a sentence from English to French:
 

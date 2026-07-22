@@ -1,13 +1,5 @@
 from langchain_ollama import OllamaLLM
-llm=OllamaLLM(model="gemma:2b")
-
-params = {
-    "max_new_tokens": 128,
-    "min_new_tokens": 10,
-    "temperature": 0.5,
-    "top_p": 0.2,
-    "top_k": 1
-}
+llm=OllamaLLM(model="gemma:2b",num_predict=256,temperature=0.5,top_p=0.2,top_k=1)
 
 prompt1 = "The wind is "
 prompt2="The future of artificial intelligence is"

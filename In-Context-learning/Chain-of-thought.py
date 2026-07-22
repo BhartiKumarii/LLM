@@ -1,10 +1,5 @@
 from langchain_ollama import OllamaLLM
-llm = OllamaLLM(model="gemma:2b")
-
-params = {
-    "max_new_tokens": 512,
-    "temperature": 0.5,
-}
+llm = OllamaLLM(model="gemma:2b",num_predict=200,temperature=0.5)
 
 prompt1 = """Consider the problem: 'A store had 22 apples. They sold 15 apples today and got a new delivery of 8 apples. 
             How many apples are there now?’
